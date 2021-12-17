@@ -1,0 +1,14 @@
+{
+  "name": "cs50",
+  "version": "1.0.0",
+  "description": "cs50 practice and learning",
+  "main": "index.js",
+  "author": "Ali Taee",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  }
+}
