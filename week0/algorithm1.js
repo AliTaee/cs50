@@ -24,6 +24,6 @@ function searchByNameInPhoneBook(query) {
   }
 }
 
-searchByNameInPhoneBook('Tabbatha')
+searchByNameInPhoneBook('Renie')
 
 console.timeEnd(PERFORMANCE_TITLE)
