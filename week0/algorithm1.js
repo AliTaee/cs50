@@ -1,6 +1,8 @@
 const data = require('./phone-book.json')
 const PERFORMANCE_TITLE = 'search the phone book'
 
+// It's return correct answer but it's not a good algorithm
+
 console.time(PERFORMANCE_TITLE)
 
 function searchByNameInPhoneBook(query) {
