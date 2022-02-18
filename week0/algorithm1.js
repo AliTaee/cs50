@@ -5,10 +5,14 @@ const PERFORMANCE_TITLE = 'search the phone book'
 
 console.time(PERFORMANCE_TITLE)
 
-function searchByNameInPhoneBook(query) {
+function searchByNameInPhoneBook(data, query) {
   let result = null
 
-  for (let index = 0; index < data.phoneBook.length; index++) {
+  for (
+    let index = 0, phoneBookLength = data.phoneBook.length;
+    index < phoneBookLength;
+    index++
+  ) {
     let firstname = data.phoneBook[index].firstname
 
     if (firstname.toLocaleLowerCase() === query.toLocaleLowerCase()) {
@@ -24,6 +28,6 @@ function searchByNameInPhoneBook(query) {
   }
 }
 
-searchByNameInPhoneBook('Renie')
+searchByNameInPhoneBook(data, 'Renie')
 
 console.timeEnd(PERFORMANCE_TITLE)
