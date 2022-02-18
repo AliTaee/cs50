@@ -1,1 +1,0 @@
-For run these code you have to visit [CS50 ide](https://ide.cs50.io/) 
