@@ -11,13 +11,13 @@ const numbers = [0, 3, 4, 9, 10, 15, 5, 6, 8, 2]
 console.time(PERFORMANCE_TITLE)
 
 const searchNumber = (data, query) => {
-  let result = false
+  let result = -1
 
   if (!data || !query) return result
 
   for (let index = 0, dataLength = data.length; index < dataLength; index++) {
     if (data[index] === query) {
-      result = true
+      result = data[index]
       break
     }
   }
