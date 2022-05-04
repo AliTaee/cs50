@@ -5,8 +5,22 @@ const PERFORMANCE_TITLE = 'search the phone book'
 
 console.time(PERFORMANCE_TITLE)
 
-function searchByNameInPhoneBook(data, query) {
-  let result = null
+interface PhoneBookItem {
+  id: number
+  firstname: string
+  lastname: string
+  phone: number
+  date: string
+  email: string
+}
+
+function searchByNameInPhoneBook(
+  data: {
+    phoneBook: [PhoneBookItem]
+  },
+  query: string
+) {
+  let result: PhoneBookItem | null = null
 
   for (
     let index = 0, phoneBookLength = data.phoneBook.length;

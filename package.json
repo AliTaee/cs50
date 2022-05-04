@@ -6,6 +6,7 @@
   "author": "Ali Taee",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^17.0.31",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
