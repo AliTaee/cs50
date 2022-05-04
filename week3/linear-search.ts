@@ -10,7 +10,7 @@ const numbers = [0, 3, 4, 9, 10, 15, 5, 6, 8, 2]
 
 console.time(PERFORMANCE_TITLE)
 
-const searchNumber = (data, query) => {
+const searchNumber = (data: number[], query: number) => {
   let result = -1
 
   if (!data || !query) return result
